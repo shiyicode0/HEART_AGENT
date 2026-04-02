@@ -18,17 +18,17 @@ from langchain_community.vectorstores import FAISS
 
 # ================= 1. 密钥配置 =================
 #DeepSeek 配置
-DEEPSEEK_API_KEY = "sk-5e086f0d09cb4f57a1c1a40e54170092"
+DEEPSEEK_API_KEY = "YOUR_KEYS"
 llm_client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
 
 #  OpenAI Whisper 配置 
-OPENAI_API_KEY = "sk-40WwvNZ2wF1m65OB5WZdrQFNyHaPXwmI9XPbjkV8XtdfacNO" 
+OPENAI_API_KEY = "YOUR_KEYS" 
 WHISPER_BASE_URL = "https://api.chatanywhere.tech/v1"
 whisper_client = OpenAI(api_key=OPENAI_API_KEY, base_url=WHISPER_BASE_URL) 
 
 # 火山 TTS 语音合成
-VOLC_APPID = "3473137619"                                 
-VOLC_TOKEN = "2sP5sW_T3EvS_TseRLr9wDJXUo3t8GH8"       
+VOLC_APPID = "YOUR_APPID"                                 
+VOLC_TOKEN = "YOUT_TOKEN_ACCESS"       
 
 # 防网络拦截配置
 NO_PROXY = {"http": None, "https": None}
