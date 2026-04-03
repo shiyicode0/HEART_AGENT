@@ -15,13 +15,14 @@ my_project/
 ```
 
 🚀 快速启动
-##1. 环境准备
+
+1. 环境准备
 请确保你的电脑已安装 Python 3.8+ 版本。然后在终端中运行以下命令安装所需依赖：
 ```Bash
 pip install fastapi uvicorn websockets httpx openai langchain-community langchain-text-splitters sentence-transformers faiss-cpu
 ```
 
-##2. 配置密钥
+2. 配置密钥
 打开 config.py 文件，填入你自己的 API 密钥：
 
 DEEPSEEK_API_KEY: DeepSeek 大模型密钥
@@ -30,7 +31,7 @@ OPENAI_API_KEY: Whisper 语音识别密钥
 
 VOLC_APPID & VOLC_TOKEN: 火山引擎 TTS 的应用 ID 和令牌
 
-##3. 自定义语料库 
+3. 自定义语料库 
 你可以修改 knowledge_test.txt 中的内容，将你们学校或心理机构的特定信息写入其中。每次用户发问时，系统会进行相似度检索并融入对话上下文。
 
 4. 运行服务
