@@ -23,6 +23,8 @@ pip install fastapi uvicorn websockets httpx openai langchain-community langchai
 ```
 
 2. 配置密钥
+
+```
 打开 config.py 文件，填入你自己的 API 密钥：
 
 DEEPSEEK_API_KEY: DeepSeek 大模型密钥
@@ -30,6 +32,7 @@ DEEPSEEK_API_KEY: DeepSeek 大模型密钥
 OPENAI_API_KEY: Whisper 语音识别密钥
 
 VOLC_APPID & VOLC_TOKEN: 火山引擎 TTS 的应用 ID 和令牌
+```
 
 3. 自定义语料库 
 你可以修改 knowledge_test.txt 中的内容，将你们学校或心理机构的特定信息写入其中。每次用户发问时，系统会进行相似度检索并融入对话上下文。
